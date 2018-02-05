@@ -1,0 +1,19 @@
+{
+  "name": "hello-react-ts",
+  "version": "1.0.0",
+  "description": "Development workflow to setup a React app using TypeScript and Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelgeorgev/hello-react-ts.git"
+  },
+  "author": "Joel George V",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelgeorgev/hello-react-ts/issues"
+  },
+  "homepage": "https://github.com/joelgeorgev/hello-react-ts#readme"
+}
