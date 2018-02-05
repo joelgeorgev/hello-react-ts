@@ -1,6 +1,6 @@
 # Hello React TypeScript
 
-> Development workflow to setup a React app using TypeScript and WebPack.
+> Development workflow to setup a React app using TypeScript and Webpack.
 
 ## Add .gitattributes
 
