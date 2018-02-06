@@ -144,5 +144,13 @@ $ npm start
 
 Open localhost:8080 and check if 'It works!' is displayed in the console. If yes, our webpack setup is working. :-)
 
+## Setup TypeScript
+
+### Install dependencies
+
+```bash
+npm i typescript ts-loader --save-dev
+```
+
 ## License
 MIT
