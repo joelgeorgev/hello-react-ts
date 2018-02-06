@@ -35,7 +35,52 @@ Paste below code snippet inside .gitignore to prevent version tracking for node_
 ## Initialize package.json
 
 ```bash
-npm init
+$ npm init
+```
+## Add index.html and index.js
+
+### index.html
+
+From project root, run:
+
+```bash
+$ mkdir template
+$ cd template/
+$ touch index.html
+```
+
+Paste below code snippet in index.html.
+
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>React TypeScript Setup Guide</title>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
+```
+
+### index.js
+
+From project root, run:
+
+```bash
+$ mkdir src
+$ cd src/
+$ touch index.js
+```
+
+Paste below code snippet in index.js.
+
+```js
+console.log('It works!');
 ```
 
 ## License
