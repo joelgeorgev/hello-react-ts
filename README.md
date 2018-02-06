@@ -212,6 +212,41 @@ $ npm i react react-dom --save
 $ npm i @types/react @types/react-dom --save-dev
 ```
 
+### Add App.tsx in src folder
+
+From project root, run:
+
+```bash
+cd src/
+touch App.tsx
+```
+
+Paste below code snippet in App.tsx.
+
+```tsx
+import * as React from 'react';
+
+export class App extends React.PureComponent<{}, {}> {
+    render() {
+        return (<div>React TS</div>);
+    }
+}
+```
+
+### Rename index.ts to index.tsx and update content
+
+Paste below code snippet in index.tsx.
+
+```tsx
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { App } from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+### Update entry point in webpack.config.js to point to index.tsx.
+
 ## Deploy to GitHub Pages
 
 ### Install gh-pages
