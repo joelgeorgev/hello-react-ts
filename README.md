@@ -1,4 +1,4 @@
-# Hello React TypeScript
+# React TypeScript Setup Guide
 
 > Development workflow to setup a React app using TypeScript and Webpack.
 
