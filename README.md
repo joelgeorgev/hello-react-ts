@@ -88,7 +88,7 @@ console.log('It works!');
 ### Install dependencies
 
 ```bash
-$ npm i webpack webpack-dev-server html-webpack-plugin path --save-dev
+$ npm i webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin path --save-dev
 ```
 
 ## License
