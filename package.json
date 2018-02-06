@@ -4,6 +4,8 @@
   "description": "Development workflow to setup a React app using TypeScript and Webpack.",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

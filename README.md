@@ -91,5 +91,58 @@ console.log('It works!');
 $ npm i webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin path --save-dev
 ```
 
+### Configure Webpack
+
+From project root, run:
+
+```bash
+$ touch webpack.config.js
+```
+
+Paste below code snippet in webpack.config.js.
+
+```js
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path');
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        filename: 'bundle.js'
+    },
+    devServer: {
+        contentBase: './dist',
+        hot: true
+    },
+    plugins: [
+        new CleanWebpackPlugin(['dist']),
+        new HtmlWebpackPlugin({
+            template: './template/index.html'
+        }),
+        new webpack.HotModuleReplacementPlugin()
+    ]
+};
+```
+
+### Add start and build scripts in package.json
+
+```json
+"scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  }
+```
+
+### Test the Webpack configuration
+
+```bash
+$ npm start
+```
+
+Open localhost:8080 and check if 'It works!' is displayed in the console. If yes, our webpack setup is working. :-)
+
 ## License
 MIT
