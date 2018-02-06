@@ -152,5 +152,29 @@ Open localhost:8080 and check if 'It works!' is displayed in the console. If yes
 npm i typescript ts-loader --save-dev
 ```
 
+### Configure TypeScript compiler
+
+From project root, run:
+
+```bash
+$ touch tsconfig.json
+```
+
+Paste below code snippet in tsconfig.json.
+
+```json
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true
+    }
+}
+```
+
 ## License
 MIT
