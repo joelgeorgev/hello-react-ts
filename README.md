@@ -6,6 +6,8 @@ Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 
 ## Add .gitattributes
 
+From project root, run:
+
 ```bash
 $ touch .gitattributes
 ```
@@ -23,6 +25,8 @@ For an explanation of above code and why it is recommended to configure line end
 
 ## Add .gitignore
 
+From project root, run:
+
 ```bash
 $ touch .gitignore
 ```
@@ -36,9 +40,12 @@ Paste below code snippet inside .gitignore to prevent version tracking for node_
 
 ## Initialize package.json
 
+From project root, run:
+
 ```bash
 $ npm init
 ```
+
 ## Add index.html and index.js
 
 ### index.html
