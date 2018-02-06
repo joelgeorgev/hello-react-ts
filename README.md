@@ -203,6 +203,15 @@ module.exports = {
 };
 ```
 
+## Setup React
+
+### Install dependencies
+
+```bash
+$ npm i react react-dom --save
+$ npm i @types/react @types/react-dom --save-dev
+```
+
 ## Deploy to GitHub Pages
 
 ### Install gh-pages
