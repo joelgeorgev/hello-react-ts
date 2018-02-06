@@ -176,5 +176,30 @@ Paste below code snippet in tsconfig.json.
 }
 ```
 
+### Rename index.js to index.ts
+
+### Integrate TypeScript with Webpack
+
+Update/add below properties in webpack.config.js.
+
+```js
+module.exports = {
+    entry: './src/index.ts',
+    devtool: 'inline-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            }
+        ]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js']
+    }
+};
+```
+
 ## License
 MIT

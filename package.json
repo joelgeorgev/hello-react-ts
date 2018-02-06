@@ -2,7 +2,7 @@
   "name": "react-ts-setup-guide",
   "version": "1.0.0",
   "description": "Development workflow to setup a React app using TypeScript and Webpack.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
