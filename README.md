@@ -185,7 +185,7 @@ Paste below code snippet in tsconfig.json.
 }
 ```
 
-### Rename index.js to index.ts
+Rename index.js to index.ts.
 
 ### Integrate TypeScript with Webpack
 
