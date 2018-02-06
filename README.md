@@ -2,6 +2,8 @@
 
 > Development workflow to setup a React app using TypeScript and Webpack.
 
+Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
+
 ## Add .gitattributes
 
 ```bash
