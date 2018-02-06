@@ -1,6 +1,6 @@
 # React TypeScript Setup Guide
 
-> Development workflow to setup a React app using TypeScript and Webpack.
+> Step by step guide to setup a React app written in TypeScript.
 
 Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 
