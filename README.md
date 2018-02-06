@@ -262,7 +262,7 @@ $ npm i gh-pages --save-dev
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://joelgeorgev.github.io/react-ts-setup-guide",
+  "homepage": "https://joelgeorgev.github.io/react-ts-setup-guide"
 ```
 
 ### Publish
