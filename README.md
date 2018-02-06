@@ -83,5 +83,13 @@ Paste below code snippet in index.js.
 console.log('It works!');
 ```
 
+## Install and configure Webpack
+
+### Install dependencies
+
+```bash
+$ npm i webpack webpack-dev-server html-webpack-plugin path --save-dev
+```
+
 ## License
 MIT
