@@ -201,5 +201,29 @@ module.exports = {
 };
 ```
 
+## Deploy to GitHub Pages
+
+### Install gh-pages
+
+```bash
+$ npm i gh-pages --save-dev
+```
+
+### Add deploy scripts and update homepage in package.json
+
+```json
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://joelgeorgev.github.io/react-ts-setup-guide",
+```
+
+### Publish
+
+```bash
+$ npm run deploy
+```
+
 ## License
 MIT
