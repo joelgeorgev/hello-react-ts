@@ -139,10 +139,12 @@ module.exports = {
 ### Add start and build scripts in package.json
 
 ```json
-"scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
-  }
+{
+    "scripts":{
+        "start": "webpack-dev-server",
+        "build": "webpack"
+    }
+}
 ```
 
 ### Test the Webpack configuration
@@ -328,11 +330,13 @@ $ npm i gh-pages --save-dev
 ### Add deploy scripts and update homepage in package.json
 
 ```json
-"scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-  "homepage": "https://joelgeorgev.github.io/react-ts-setup-guide"
+{
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
+    },
+    "homepage": "https://joelgeorgev.github.io/react-ts-setup-guide"
+}
 ```
 
 ### Publish
