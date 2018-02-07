@@ -1,5 +1,7 @@
 # React TypeScript Setup Guide
 
+[![Build Status](https://travis-ci.org/joelgeorgev/react-ts-setup-guide.svg?branch=master)](https://travis-ci.org/joelgeorgev/react-ts-setup-guide)
+
 > Step by step guide to setup a React app written in TypeScript.
 
 Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
