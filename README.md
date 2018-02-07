@@ -254,6 +254,69 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ### Update entry point in webpack.config.js to point to index.tsx.
 
+## Setup Testing using Jest
+
+### Install dependencies
+
+```bash
+$ npm i jest @types/jest ts-jest --save-dev
+```
+
+### Setup Jest
+
+Paste below code snippet in package.json.
+
+```json
+{
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
+```
+
+Add test script in package.json.
+
+```json
+{
+    "scripts":{
+        "test": "jest"
+    }
+}
+```
+
+### Add App.tsx in src folder
+
+From project root, run:
+
+```bash
+cd src/
+touch App.test.tsx
+```
+
+Paste below code snippet in App.test.tsx.
+
+```tsx
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { App } from './App';
+
+it('smoke test', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<App />, div);
+});
+```
+
 ## Deploy to GitHub Pages
 
 ### Install gh-pages
