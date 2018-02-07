@@ -142,7 +142,7 @@ module.exports = {
 
 ```json
 {
-    "scripts":{
+    "scripts": {
         "start": "webpack-dev-server",
         "build": "webpack"
     }
@@ -162,7 +162,7 @@ Open localhost:8080 and check if 'It works!' is displayed in the console. If yes
 ### Install dependencies
 
 ```bash
-npm i typescript ts-loader --save-dev
+$ npm i typescript ts-loader --save-dev
 ```
 
 ### Configure TypeScript compiler
@@ -228,8 +228,8 @@ $ npm i @types/react @types/react-dom --save-dev
 From project root, run:
 
 ```bash
-cd src/
-touch App.tsx
+$ cd src/
+$ touch App.tsx
 ```
 
 Paste below code snippet in App.tsx.
@@ -293,19 +293,19 @@ Add test script in package.json.
 
 ```json
 {
-    "scripts":{
+    "scripts": {
         "test": "jest"
     }
 }
 ```
 
-### Add App.tsx in src folder
+### Add App.test.tsx in src folder
 
 From project root, run:
 
 ```bash
-cd src/
-touch App.test.tsx
+$ cd src/
+$ touch App.test.tsx
 ```
 
 Paste below code snippet in App.test.tsx.
@@ -319,6 +319,31 @@ it('smoke test', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App />, div);
 });
+```
+
+## Setup linting using TSLint
+
+### Install and setup TSLint
+
+```bash
+$ npm i tslint -g
+```
+
+From project root, run:
+
+```bash
+$ npm i tslint --save-dev
+$ tslint --init
+```
+
+### Add lint script in package.json
+
+```json
+{
+    "scripts": {
+        "lint": "tslint -c tslint.json './src/**/*.ts*'"
+    }
+}
 ```
 
 ## Deploy to GitHub Pages
