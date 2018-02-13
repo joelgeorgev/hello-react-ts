@@ -15,6 +15,12 @@
       true,
       "spaces",
       2
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any"
+      }
     ]
   },
   "rulesDirectory": []
