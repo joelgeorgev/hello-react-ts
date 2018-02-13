@@ -261,12 +261,13 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ### Update entry point in webpack.config.js to point to index.tsx.
 
-## Setup Testing using Jest
+## Setup Testing using Jest and enzyme
 
 ### Install dependencies
 
 ```bash
 $ npm i jest @types/jest ts-jest --save-dev
+$ npm i enzyme @types/enzyme enzyme-adapter-react-16 @types/enzyme-adapter-react-16 --save-dev
 ```
 
 ### Setup Jest
@@ -316,11 +317,21 @@ Paste below code snippet in App.test.tsx.
 ```tsx
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { configure, shallow } from 'enzyme';
+import * as Adapter from 'enzyme-adapter-react-16';
+
 import { App } from './App';
 
+configure({ adapter: new Adapter() });
+
 it('smoke test', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App />, div);
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+});
+
+it('shallow render test', () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.contains(<div>React TS</div>)).toEqual(true);
 });
 ```
 
