@@ -82,7 +82,7 @@ Paste below code snippet in **index.js**.
 console.log('It works!');
 ```
 
-## Install and configure Webpack
+## Install and configure webpack
 
 ### Install dependencies
 
@@ -90,7 +90,7 @@ console.log('It works!');
 $ npm i webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin path --save-dev
 ```
 
-### Configure Webpack
+### Configure webpack
 
 At project root, create **webpack.config.js** file with below content:
 
@@ -131,7 +131,7 @@ module.exports = {
 }
 ```
 
-### Test the Webpack configuration
+### Test webpack configuration
 
 ```bash
 $ npm start
@@ -170,7 +170,7 @@ At project root, create **tsconfig.json** file with below content:
 
 Rename **index.js** to **index.ts**.
 
-### Integrate TypeScript with Webpack
+### Integrate TypeScript with webpack
 
 Update/add below properties in **webpack.config.js**.
 
