@@ -206,8 +206,7 @@ module.exports = {
 ### Install dependencies
 
 ```bash
-$ npm i react react-dom --save
-$ npm i @types/react @types/react-dom --save-dev
+$ npm i react @types/react react-dom @types/react-dom --save
 ```
 
 ### Add App.tsx in src folder
