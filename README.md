@@ -48,7 +48,7 @@ $ cd template/
 $ touch index.html
 ```
 
-Paste below code snippet in index.html.
+Paste below code snippet in **index.html**.
 
 ```html
 <!doctype html>
@@ -76,7 +76,7 @@ $ cd src/
 $ touch index.js
 ```
 
-Paste below code snippet in index.js.
+Paste below code snippet in **index.js**.
 
 ```js
 console.log('It works!');
@@ -168,11 +168,11 @@ At project root, create **tsconfig.json** file with below content:
 }
 ```
 
-Rename index.js to index.ts.
+Rename **index.js** to **index.ts**.
 
 ### Integrate TypeScript with Webpack
 
-Update/add below properties in webpack.config.js.
+Update/add below properties in **webpack.config.js**.
 
 ```js
 module.exports = {
@@ -225,7 +225,7 @@ export class App extends React.PureComponent<{}, {}> {
 
 ### Rename index.ts to index.tsx and update content
 
-Paste below code snippet in index.tsx.
+Paste below code snippet in **index.tsx**.
 
 ```tsx
 import * as React from 'react';
@@ -235,7 +235,7 @@ import { App } from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-### Update entry point in webpack.config.js to point to index.tsx.
+### Update entry point in **webpack.config.js** to point to **index.tsx**.
 
 ## Setup Testing using Jest and enzyme
 
@@ -248,7 +248,7 @@ $ npm i enzyme @types/enzyme enzyme-adapter-react-16 @types/enzyme-adapter-react
 
 ### Setup Jest
 
-Paste below code snippet in package.json.
+Paste below code snippet in **package.json**.
 
 ```json
 {
@@ -269,7 +269,7 @@ Paste below code snippet in package.json.
 }
 ```
 
-Add test script in package.json.
+Add test script in **package.json**.
 
 ```json
 {
