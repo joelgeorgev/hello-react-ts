@@ -168,6 +168,8 @@ At project root, create **tsconfig.json** file with below content:
 }
 ```
 
+Refer [here](https://www.typescriptlang.org/docs/handbook/compiler-options.html) for the complete set of TypeScript compiler options along with their description.
+
 Rename **index.js** to **index.ts**.
 
 ### Integrate TypeScript with webpack
@@ -192,6 +194,8 @@ module.exports = {
     }
 };
 ```
+
+Refer [here](https://webpack.js.org/guides/typescript/) for the official webpack guide on integrating TypeScript.
 
 ## Setup React
 
