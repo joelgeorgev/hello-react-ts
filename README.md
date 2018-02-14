@@ -8,13 +8,7 @@ Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 
 ## Add .gitattributes
 
-From project root, run:
-
-```bash
-$ touch .gitattributes
-```
-
-Paste below code snippet inside .gitattributes to configure line endings for the repository. 
+At project root, create **.gitattributes** file with below content, to configure line endings for the repository: 
 
 ```
 * text=auto
@@ -27,13 +21,7 @@ For an explanation of above code and why it is recommended to configure line end
 
 ## Add .gitignore
 
-From project root, run:
-
-```bash
-$ touch .gitignore
-```
-
-Paste below code snippet inside .gitignore to prevent version tracking for node_modules and dist folders. 
+At project root, create **.gitignore** file with below content, to prevent version tracking for node_modules and dist folders: 
 
 ```
 /node_modules
@@ -42,7 +30,7 @@ Paste below code snippet inside .gitignore to prevent version tracking for node_
 
 ## Initialize package.json
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ npm init
@@ -52,7 +40,7 @@ $ npm init
 
 ### index.html
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ mkdir template
@@ -80,7 +68,7 @@ Paste below code snippet in index.html.
 
 ### index.js
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ mkdir src
@@ -104,13 +92,7 @@ $ npm i webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin path
 
 ### Configure Webpack
 
-From project root, run:
-
-```bash
-$ touch webpack.config.js
-```
-
-Paste below code snippet in webpack.config.js.
+At project root, create **webpack.config.js** file with below content:
 
 ```js
 const webpack = require('webpack');
@@ -167,13 +149,7 @@ $ npm i typescript ts-loader --save-dev
 
 ### Configure TypeScript compiler
 
-From project root, run:
-
-```bash
-$ touch tsconfig.json
-```
-
-Paste below code snippet in tsconfig.json.
+At project root, create **tsconfig.json** file with below content:
 
 ```json
 {
@@ -228,7 +204,7 @@ $ npm i @types/react @types/react-dom --save-dev
 
 ### Add App.tsx in src folder
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ cd src/
@@ -305,7 +281,7 @@ Add test script in package.json.
 
 ### Add App.test.tsx in src folder
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ cd src/
@@ -343,7 +319,7 @@ it('shallow render test', () => {
 $ npm i tslint -g
 ```
 
-From project root, run:
+At project root, run:
 
 ```bash
 $ npm i tslint --save-dev
