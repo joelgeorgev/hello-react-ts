@@ -17,7 +17,7 @@ At project root, create **.gitattributes** file with below content, to configure
 *.tsx text eol=lf
 ```
 
-For an explanation of above code and why it is recommended to configure line endings, read [here](https://help.github.com/articles/dealing-with-line-endings/).
+*Refer [here](https://help.github.com/articles/dealing-with-line-endings/) for an explanation of above code and why it is recommended to configure line endings.* 
 
 ## Add .gitignore
 
