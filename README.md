@@ -211,7 +211,7 @@ $ cd src/
 $ touch App.tsx
 ```
 
-Paste below code snippet in App.tsx.
+Paste below code snippet in **App.tsx**.
 
 ```tsx
 import * as React from 'react';
@@ -288,7 +288,7 @@ $ cd src/
 $ touch App.test.tsx
 ```
 
-Paste below code snippet in App.test.tsx.
+Paste below code snippet in **App.test.tsx**.
 
 ```tsx
 import * as React from 'react';
