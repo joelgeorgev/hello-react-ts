@@ -254,7 +254,7 @@ $ npm i jest @types/jest ts-jest --save-dev
 $ npm i enzyme @types/enzyme enzyme-adapter-react-16 @types/enzyme-adapter-react-16 --save-dev
 ```
 
-### Setup Jest
+### Setup TypeScript support for Jest
 
 Paste below code snippet in **package.json**.
 
@@ -276,6 +276,8 @@ Paste below code snippet in **package.json**.
   }
 }
 ```
+
+*Refer [ts-jest](https://github.com/kulshekhar/ts-jest) documentation for more info.*
 
 Add test script in **package.json**.
 
@@ -318,6 +320,8 @@ it('shallow render test', () => {
   expect(wrapper.contains(<div>React TS</div>)).toEqual(true);
 });
 ```
+
+*Refer [enzyme](https://github.com/airbnb/enzyme) documentation for more info.*
 
 ## Setup linting using TSLint
 
