@@ -120,6 +120,10 @@ module.exports = {
 };
 ```
 
+*[HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin) - Simplifies creation of HTML files to serve your webpack bundles*
+
+*[CleanWebpackPlugin](https://github.com/johnagan/clean-webpack-plugin) - A webpack plugin to remove your build folder(s) before building*
+
 ### Add start and build scripts in package.json
 
 ```json
@@ -168,7 +172,7 @@ At project root, create **tsconfig.json** file with below content:
 }
 ```
 
-Refer [here](https://www.typescriptlang.org/docs/handbook/compiler-options.html) for the complete set of TypeScript compiler options along with their description.
+*Refer [here](https://www.typescriptlang.org/docs/handbook/compiler-options.html) for the complete set of TypeScript compiler options along with their description.*
 
 Rename **index.js** to **index.ts**.
 
@@ -195,7 +199,7 @@ module.exports = {
 };
 ```
 
-Refer [here](https://webpack.js.org/guides/typescript/) for the official webpack guide on integrating TypeScript.
+*Refer [here](https://webpack.js.org/guides/typescript/) for the official webpack guide on integrating TypeScript.*
 
 ## Setup React
 
