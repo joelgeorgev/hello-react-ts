@@ -6,6 +6,18 @@
 
 Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 
+## Contents
+- [Add .gitattributes](#add-.gitattributes)
+- [Add .gitignore](#add-.gitignore)
+- [Initialize package.json](#initialize-package.json)
+- [Add index.html and index.js](#add-index.html-and-index.js)
+- [Install and configure webpack](#install-and-configure-webpack)
+- [Setup TypeScript](#setup-typeScript)
+- [Setup React](#setup-react)
+- [Setup Testing using Jest and enzyme](#setup-testing-using-jest-and-enzyme)
+- [Setup linting using TSLint](#setup-linting-using-tsLint)
+- [Deploy to GitHub Pages](#deploy-to-github-pages)
+
 ## Add .gitattributes
 
 At project root, create **.gitattributes** file with below content, to configure line endings for the repository: 
