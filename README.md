@@ -9,9 +9,8 @@ Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 ## Table of Contents
 - [Add gitattributes](#add-gitattributes)
 - [Add gitignore](#add-gitignore)
-- [Initialize package.json](#initialize-package.json)
-- [Add index.html and index.js](#add-index.html-and-index.js)
-- [Install and configure webpack](#install-and-configure-webpack)
+- [Setup base project](#setup-base-project)
+- [Setup webpack](#setup-webpack)
 - [Setup TypeScript](#setup-typescript)
 - [Setup React](#setup-react)
 - [Setup Testing using Jest and enzyme](#setup-testing-using-jest-and-enzyme)
@@ -40,7 +39,9 @@ At project root, create **.gitignore** file with below content, to prevent versi
 /dist
 ```
 
-## Initialize package.json
+## Setup base project
+
+### Initialize package.json
 
 At project root, run:
 
@@ -48,9 +49,9 @@ At project root, run:
 $ npm init
 ```
 
-## Add index.html and index.js
+### Add index.html and index.js
 
-### index.html
+**index.html**
 
 At project root, run:
 
@@ -78,7 +79,7 @@ Paste below code snippet in **index.html**.
 </html>
 ```
 
-### index.js
+**index.js**
 
 At project root, run:
 
@@ -94,7 +95,7 @@ Paste below code snippet in **index.js**.
 console.log('It works!');
 ```
 
-## Install and configure webpack
+## Setup webpack
 
 ### Install dependencies
 
