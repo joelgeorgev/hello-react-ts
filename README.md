@@ -6,19 +6,19 @@
 
 Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 
-## Contents
-- [Add .gitattributes](#add-.gitattributes)
-- [Add .gitignore](#add-.gitignore)
+## Table of Contents
+- [Add gitattributes](#add-gitattributes)
+- [Add gitignore](#add-gitignore)
 - [Initialize package.json](#initialize-package.json)
 - [Add index.html and index.js](#add-index.html-and-index.js)
 - [Install and configure webpack](#install-and-configure-webpack)
-- [Setup TypeScript](#setup-typeScript)
+- [Setup TypeScript](#setup-typescript)
 - [Setup React](#setup-react)
 - [Setup Testing using Jest and enzyme](#setup-testing-using-jest-and-enzyme)
-- [Setup linting using TSLint](#setup-linting-using-tsLint)
+- [Setup linting using TSLint](#setup-linting-using-tslint)
 - [Deploy to GitHub Pages](#deploy-to-github-pages)
 
-## Add .gitattributes
+## Add gitattributes
 
 At project root, create **.gitattributes** file with below content, to configure line endings for the repository: 
 
@@ -31,7 +31,7 @@ At project root, create **.gitattributes** file with below content, to configure
 
 *Refer [here](https://help.github.com/articles/dealing-with-line-endings/) for an explanation of above code and why it is recommended to configure line endings.* 
 
-## Add .gitignore
+## Add gitignore
 
 At project root, create **.gitignore** file with below content, to prevent version tracking for node_modules and dist folders: 
 
