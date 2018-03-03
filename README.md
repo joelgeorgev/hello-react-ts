@@ -364,6 +364,12 @@ $ tslint --init
 
 ## Optimize webpack for production
 
+### Install webpack-merge
+
+```bash
+$ npm i webpack-merge --save-dev
+```
+
 ### Use separate config for dev, prod
 
 At project root, remove **webpack.config.js** file. Add following files instead:
