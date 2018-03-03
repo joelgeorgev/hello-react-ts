@@ -15,6 +15,7 @@ Check out the app [here](https://joelgeorgev.github.io/react-ts-setup-guide).
 - [Setup React](#setup-react)
 - [Setup Testing using Jest and enzyme](#setup-testing-using-jest-and-enzyme)
 - [Setup linting using TSLint](#setup-linting-using-tslint)
+- [Optimize webpack for production](#optimize-webpack-for-production)
 - [Deploy to GitHub Pages](#deploy-to-github-pages)
 
 ## Add gitattributes
