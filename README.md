@@ -364,7 +364,7 @@ $ tslint --init
 
 ## Optimize webpack for production
 
-### Install webpack-merge
+### Install [webpack-merge](https://github.com/survivejs/webpack-merge)
 
 ```bash
 $ npm i webpack-merge --save-dev
