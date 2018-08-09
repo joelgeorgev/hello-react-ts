@@ -93,7 +93,7 @@ $ touch index.js
 Paste below code snippet in **index.js**.
 
 ```js
-console.log('It works!');
+console.log('It works!')
 ```
 
 ## Setup webpack
@@ -109,10 +109,10 @@ $ npm i webpack webpack-dev-server html-webpack-plugin clean-webpack-plugin path
 At project root, create **webpack.config.js** file with below content:
 
 ```js
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
 
 module.exports = {
     entry: './src/index.js',
@@ -131,7 +131,7 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin()
     ]
-};
+}
 ```
 
 *[HtmlWebpackPlugin](https://github.com/jantimon/html-webpack-plugin) - Simplifies creation of HTML files to serve your webpack bundles*
@@ -210,7 +210,7 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
     }
-};
+}
 ```
 
 *Refer [here](https://webpack.js.org/guides/typescript/) for the official webpack guide on integrating TypeScript.*
@@ -236,11 +236,11 @@ $ touch App.tsx
 Paste below code snippet in **App.tsx**.
 
 ```tsx
-import * as React from 'react';
+import * as React from 'react'
 
 export class App extends React.PureComponent<{}, {}> {
     render() {
-        return (<div>React TS</div>);
+        return (<div>React TypeScript</div>)
     }
 }
 ```
@@ -250,11 +250,11 @@ export class App extends React.PureComponent<{}, {}> {
 Paste below code snippet in **index.tsx**.
 
 ```tsx
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { App } from './App';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import { App } from './App'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
 ### Update entry point in **webpack.config.js** to point to **index.tsx**.
@@ -315,24 +315,24 @@ $ touch App.test.tsx
 Paste below code snippet in **App.test.tsx**.
 
 ```tsx
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { configure, shallow } from 'enzyme';
-import * as Adapter from 'enzyme-adapter-react-16';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import { configure, shallow } from 'enzyme'
+import * as Adapter from 'enzyme-adapter-react-16'
 
-import { App } from './App';
+import { App } from './App'
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 it('smoke test', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-});
+  const div = document.createElement('div')
+  ReactDOM.render(<App />, div)
+})
 
 it('shallow render test', () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper.contains(<div>React TS</div>)).toEqual(true);
-});
+  const wrapper = shallow(<App />)
+  expect(wrapper.contains(<div>React TypeScript</div>)).toEqual(true)
+})
 ```
 
 *Refer [enzyme](https://github.com/airbnb/enzyme) documentation for more info.*
@@ -377,10 +377,10 @@ At project root, remove **webpack.config.js** file. Add following files instead:
 **webpack.common.js**
 
 ```js
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -407,15 +407,15 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   }
-};
+}
 ```
 
 **webpack.dev.js**
 
 ```js
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const webpack = require('webpack')
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   devtool: 'inline-source-map',
@@ -426,15 +426,15 @@ module.exports = merge(common, {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ]
-});
+})
 ```
 
 **webpack.prod.js**
 
 ```js
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const webpack = require('webpack')
+const merge = require('webpack-merge')
+const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   devtool: 'source-map',
@@ -444,7 +444,7 @@ module.exports = merge(common, {
     }),
     new webpack.optimize.UglifyJsPlugin()
   ]
-});
+})
 ```
 
 ### Update start and build scripts in package.json

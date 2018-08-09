@@ -1,7 +1,7 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -28,4 +28,4 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
   }
-};
+}
