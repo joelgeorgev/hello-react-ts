@@ -1,6 +1,6 @@
 # React TypeScript Setup Guide
 
-![CI](https://github.com/joelgeorgev/react-ts-setup-guide/workflows/CI/badge.svg)
+[![CI](https://github.com/joelgeorgev/react-ts-setup-guide/workflows/CI/badge.svg)](https://github.com/joelgeorgev/react-ts-setup-guide/actions)
 
 > Step by step guide to setup a React app written in TypeScript.
 
